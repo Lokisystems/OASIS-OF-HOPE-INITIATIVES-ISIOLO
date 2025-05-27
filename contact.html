@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Of Hope Health center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YD3WMCREY3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YD3WMCREY3');
+    </script>
+</head>
+    
+<body>
+<!------------------Navigation Section--------------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+            <div class="nav" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html" class="active">ABOUT</a></li>
+                    <li><a href="services.html" class="active">SERVICES</a></li>
+                    <li><a href="blog.php" class="active">BLOG</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="title-heading">Contact Us</h1>
+    </section>
+
+
+<!---------------contact us page------------------>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7446731111186!2d37.57044971090568!3d0.3481287996469982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788697a4e23aa75%3A0xa92bfda034c2fcb0!2sOasis%20of%20Hope%20Initiatives!5e0!3m2!1sen!2ske!4v1699368835551!5m2!1sen!2ske" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </section>
+    <section class="contact-us">
+        <div class="contact-col">
+            <div class="contact-1">
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Bulapesa</h5>
+                    <p>isiolo, kenya</p>
+                </span>
+            </div>
+            <div class="contact-2">
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>0792104891</h5>
+                    <p>Emergency Contact</p>
+                </span>
+            </div>
+            <div class="contact-3">
+                <i class="fa fa-clock-o"></i>
+                <span>
+                    <h5>Open From:</h5>
+                    <p>monday: 8 - 5pm.</p>
+                    <P>Tuesday: 8 - 5pm.</P>
+                    <p>Wednesday: 8 - 5pm.</p>
+                    <p>Thursday: 8 - 5pm.</p>
+                    <p>Friday: 8 - 5pm.</p>
+                    <p>Saturday: 8 - 5pm.</p>
+                    <p>Sunday: Closed.</p>
+                </span>
+            </div>
+            <div class="contact-4">
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@ohi.org</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="formhandler.php" method="post">
+                <label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                </label>
+                <label>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                </label>
+                <label>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                </label>
+                <button type="submit" class="hero-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+<!---------------------- Footer   ----------------->
+<section class="footer">
+    <p class="footer-section">Find us on the following platforms</p>
+    <div class="icons">
+        <a href="www.facebook.com/login" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="www.twitter.com/login" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Flogin%2F&source=desktop_nav" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> www.oasisofhopeinitiativesisiolo.org | All rights reserved.</p>
+    
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear().toString();
+    </script>
+    
+</section>
+
+
+
+<!---------------Javascript for Toggle Menu------------->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+
+<!--Animate on scroll-->
+<script>
+    //common reveal options to create reveal animations
+    ScrollReveal({
+        //reset: true,
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay:400
+});
+
+    //target elements, and specify options to create reveal animations
+    ScrollReveal().reveal('.title-heading, .nav', { delay: 500, origin: 'bottom' });
+    ScrollReveal().reveal('.contact-1', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.contact-2', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.contact-3', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.contact-4', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.footer-section', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.icons', { delay: 500, origin:'bottom'});
+</script>
+
+
+
+
+</body>
+</html>
